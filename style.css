@@ -1,0 +1,640 @@
+/* Universal Resets */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: inherit; 
+}
+a :visited{
+	text-decoration: none;
+	color: inherit; 
+}
+
+/* Using the mobile first approach to make the website responsive with less work on the media queries */
+/* You should normally use media queries at each breakpoint but for an example i will just be using the most typical screen-sizes! */
+/* For a mobile phone */
+@media only screen and (min-device-width : 320px) {
+	header {
+	
+	}
+	/* Styling the social links and logo */
+	.logoLinksWrapper {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		width: 90%;
+		margin: auto;
+	}
+	.socialLinksWrapper {
+
+	}
+	.socialLinksWrapper i {
+		font-size: .8em;
+		padding: 3.9px;
+		margin-top: 1.3em;
+	}
+	.logoWrapper {
+		
+	}
+	.logoWrapper img {
+		width: 60%;
+		margin-top: 1.3em;
+		
+		
+		
+	}
+/* Styling the navigation bar */
+	nav ul {
+		width: 100%; 
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		list-style: none;
+	}
+	nav ul li {
+		width: 100%; 
+		background: #eee;
+		text-align: center;
+		padding: 6px;
+		font-size: .8em;
+	}
+	/* Styling the introduction box */
+	.IntroWrapper {
+		background-image: url(Pictures/blog-3.jpg);
+		width: 100%;
+		height: 30em; 
+		background-size: cover;
+		background-position: center;;
+	}
+	.titleContainer {
+		width: 70%;
+		margin: auto;
+		text-align: center;
+		padding-top: 7em;
+		
+		
+	}
+	.titleContainer h2 {
+		text-transform: uppercase;
+		color: black;
+		font-size:1.3em;
+		letter-spacing: 1.2px;
+		font-family: 'Lustria', serif;
+		padding-bottom: 1em;
+	}
+	.titleContainer p {
+		font-size: .8em;
+		margin-bottom: .6em;
+		color: black;
+		font-style: italic;
+		font-family: 'Lustria', serif;
+		margin-top: 10em;
+		
+
+	}
+	/* Styling the body */
+	.blogTitle {
+		width: 70%;
+		margin: auto;
+		text-align: center;
+		
+	}
+	.blogTitle h3 {
+		margin-top: 1em;
+		font-family: 'Lustria', serif;
+		font-size: 1em;
+		letter-spacing: .5px
+	}
+	.blogTitle p {
+		font-family: 'Lustria', serif;
+		font-size: .7em;
+		margin-top: .5em;
+		color: #be9656;
+		font-weight: 100;
+		letter-spacing: .5px
+
+		
+	}
+	/* Styling the main article */
+	.mainArticleWrapper {
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+		
+		
+	}
+	.mainArticleWrapper img {
+		width: 100%;
+	}
+	.mainArticleWrapper p {
+		font-size: .8em;
+		font-weight: 200;
+		margin-top: 1.5em;
+	}
+	.mainArticleWrapper h6 {
+		margin-top: 1.6em;
+		font-size: .7em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #be9656;
+
+		
+	}
+	/* Styling the blog posts */
+	.artLifestyle {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		margin-top: 2em;
+		font-size: .8em;
+		letter-spacing: 2px;
+		padding-bottom: .5em;
+		border-bottom: solid .1px  #be9656 ;
+	
+	}
+	.blogPostsWrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 80%;
+		margin:  auto;
+		margin-top: 2em;
+	}
+	.blogPosts {
+		text-align: center;
+		margin-bottom: 1em;
+		
+	}
+	.blogPosts img {
+		width: 100%;
+		height: 15em;
+		
+	}
+	.blogPosts h4 {
+		margin-top: 1em;
+		font-family: 'Lustria', serif;
+		font-size: 1.4em;
+		letter-spacing: .5px
+		
+	}
+	.blogPosts h5 {
+		padding-top: 1em;
+		font-size: .8em;
+		letter-spacing: 2px;
+		color: #be9656;
+		width: 50%; 
+		font-style: italic;
+		margin: auto;
+		padding-bottom: .5em;
+		border-bottom: solid .1px #be9656; 
+		
+	}
+	.blogPosts p {
+		font-size: .8em;
+		font-weight: 200;
+		margin-top: 1.5em;
+		text-align: left;
+		width: 100%; 
+		
+	}
+	.blogPosts h6 {
+			margin-top: 1.6em;
+		font-size: .7em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #be9656;
+		text-align: left;
+		
+		
+	}
+	/* Styling the instagram link */
+	.instagramWrapper {
+		width: 70%; 
+		margin: auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: grid;
+		grid-template-columns: 20% 80%; 
+		
+		
+	}
+	.instagramWrapper i {
+		font-size: 1.65em; 
+		padding: 5px;
+		text-align: right;
+		color: #be9656;
+
+		
+		
+	}
+	.instagramWrapper p {
+		padding: 10px 1px;
+		font-size: .7em;
+		color: #be9656;
+		font-family: 'Lustria', serif;
+		letter-spacing: 1.7px;
+		text-transform: uppercase
+
+		
+	}
+	/* Styling the footer*/
+	/* Styling imgs in the footer*/
+	footer {
+			background: #222222
+
+		
+	}
+	.footerIMG {
+		width: 100%;
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		
+		
+		
+	}
+	.footerIMG img {
+		width: 100%;
+		height: 8em;
+	}
+	.noShow {
+		display: none;
+	}
+	/* Styling main footer*/
+	.footerWrapper {
+		width: 90%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr ;
+		text-align: center;
+	}
+	.footerLogoWrapper {
+		margin-top: 2em; 
+	}
+	.footerLogoWrapper img {
+		width: 10em; 	  
+	}
+	.footerSubscriptionWrapper {
+		margin-top: 1em;
+	}
+	.footerSubscriptionWrapper p {
+		font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: .7em;
+    font-weight: 600;
+    letter-spacing: 2px;
+	padding-bottom: 1em;
+    text-transform: uppercase;
+    color: #999;
+	}
+	input[type=email] {
+		width: 80%;
+		background-color: none;
+		color: #000;
+		font-family: Lato, Helvetica, Arial, sans-serif;
+		font-size:  1em;
+		padding-left: 1em;
+		font-family: cursive;
+		text-align: center;
+		padding: 5px 0; 
+
+
+	}
+	.footerSubscriptionWrapper input:placeholder-shown {
+		font-family: cursive;
+		font-size:  1em;
+		text-align: center;
+				padding: 5px 0; 
+
+
+	}
+	.footerSubscriptionWrapper button {
+		width: 80%;
+		padding: 10px 0; 
+		margin-top: 1em;
+		font-family: Lato, Helvetica, Arial, sans-serif;
+		font-size: .7em;
+		 text-transform: uppercase;
+		letter-spacing: 2px;
+	    background-color: #888888;
+		color: #ffffff;
+		border-color: #888888;
+		margin-bottom: 1em;
+
+	}
+	.footerLinks {
+		width: 80%;
+		margin: 1em auto;
+		text-align: left;
+		
+		
+	}
+	.footerLinks h5 {
+			font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: .7em;
+    font-weight: 600;
+    letter-spacing: 2px;
+	padding-bottom: 1em;
+    text-transform: uppercase;
+    color: #999;
+		
+	}
+	.footerLinks h6 {
+		color: white;
+		font-family: Lustria, Georgia, serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 1.2em;
+		width: 100%;
+    	font-size: 11px;
+		
+	}
+	.footerLinks p {
+		    font-style: italic;
+			color: #999;
+		    font-family: Lustria, Georgia, serif;
+			font-size: .7em;
+			margin-bottom: 1.5em;
+			margin-top: .3em;
+
+	}
+		/* Styling lower footer*/
+	.lowerFooterlinks {
+		width: 99%;
+		margin: auto;
+		border-top: 1px #444 solid;
+	}
+	.lowerFooterlinksUl {
+		display: grid;
+		grid-template-columns: 18% 24% 21% 36%;
+		list-style: none;
+		width: 50%;
+		margin-right: auto;
+		text-align: left;
+		margin-top: .5em;
+		margin-left: 1em;
+		
+	}
+	.lowerFooterlinksUl li {
+		font-size: .7em;
+		color: white;
+		font-weight: 100; 
+		font-family: open sans;
+	}
+	.lowerFooterlinks p {
+		width: 70%; 
+		margin-right: auto;
+		margin-left: 1.3em;
+		margin-top: 1em;
+		 text-align: left;
+		font-size: .7em;
+		color: white;
+		padding-bottom: 2em;
+	}
+	
+	.NoSHOW {
+		display: none;
+	}
+	
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+}
+@media only screen and (min-device-width : 750px) {
+	/* Creating an inline navigation for screen sizes 750px and up */
+
+	nav {
+		border-top: 1px solid #e1e1e1;
+
+		
+		
+	}
+	nav ul {
+		width: 100%;
+		margin: auto;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+		
+
+		
+		
+	}
+	nav ul li {
+	background: white; 
+	border: none; 
+	font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+	padding: 1em 0;
+	color: dimgrey;
+		
+	}
+	/* Increasing the size of the title */
+	.titleContainer p {
+		font-size: 1.3em;
+		margin-top: 6em;
+	}
+	.titleContainer h2 {
+		font-size: 2.2em;
+		letter-spacing: 4px;
+	}
+		/* Increasing the size of the first blog */
+	.blogTitle h3 {
+		font-size: 2em;
+	}
+	.blogTitle p {
+		font-size: 1.3em;
+		
+	}
+	.mainArticleWrapper p {
+		font-size: 1.1em;
+	}
+	.mainArticleWrapper h6 {
+		font-size: 1em
+	}
+		/* Increasing the size of the art lifestyle p */
+	.artLifestyle {
+		font-size: 1em;
+	}
+		/* Increasing the size of the blog posts */
+	.blogPostsWrapper {
+		grid-template-columns: 1fr 1fr; 
+		grid-gap: 5%;
+	}
+	.blogPosts h4 {
+		font-size: 1.6em
+	}
+	.blogPosts h5 {
+		font-size: .9em
+	}
+	.blogPosts p {
+		font-size: .9em;
+	}
+	.blogPosts h6 {
+		font-size: .8em;
+	}
+		/* Increasing the size of the instagram link*/
+	.instagramWrapper {
+		width: 40%;
+	}
+	
+/* Restyling the footer*/
+	
+		/* Increasing the size of the pictures*/
+	.footerIMG {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+	}
+	.footerWrapper {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin-top: 1.3em;
+	}
+	.footerLogoWrapper {
+		margin-top: 1em;
+	}
+	.footerLogoWrapper img {
+		width: 80%;
+	}
+	.footerSubscriptionWrapper input {
+		height: 1.6em;
+	}
+	.footerSubscriptionWrapper input:placeholder-shown {
+		height: 1.6em;
+	}
+	.footerSubscriptionWrapper button {
+		margin-top: 1em;
+		
+
+		
+
+			
+	}
+/* Restyling the lower footer*/
+	.lowerFooter {
+		position: relative;
+	}
+
+	.lowerFooterlinksUl{
+		margin: 1em 0 0 auto;
+		width: 40%;
+		padding-bottom: 2em;
+		
+		
+	}
+	.lowerFooterlinks p {
+		display: inline-block;
+		width: 30%; 
+		position: absolute;
+		top: .8em;
+	}
+
+	
+
+	
+
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+}
+@media only screen and (min-device-width : 1000px) {
+	/* Syling  for screen sizes 1000px and up */
+	/* Reducing the size of the logo */
+	.logoWrapper img {
+		width: 39%;
+		margin-left: 5em;
+	}
+	.socialLinksWrapper i {
+		font-size: 1em;
+	}
+	/* Centering the navigation links */
+	nav ul {
+		width: 60%;
+		padding: .7em;
+	}
+	nav ul li {
+		transition: color .6s ease-in-out;
+	}
+	/* Adding animaiton to the navigation links */
+	nav ul li:hover {
+		color: #be9656;
+;
+	}
+	/* Increasing the size of the home picture so it fits a desktop screen + adding paralax (just because i can!) */
+	.IntroWrapper {
+		height: 40em;
+		background-attachment: fixed;
+	}
+	/* Enlarging the Title*/
+	.blogTitle h3 {
+		font-size: 3em;
+	}
+	.mainArticleWrapper {
+
+	}
+	.mainArticleWrapper img {
+	}
+	.firstIMGGallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-areas: 
+			"a a"
+			"b c"
+			;
+		grid-gap: 1%;
+		
+	}
+	.NoSHOW {
+		display: grid;
+	}
+	.first{
+		grid-area: a;
+		width: 100%;
+		height: 50%;
+	}
+	.second{
+		grid-area: b;
+		width: 100%;
+	}
+	.third{
+		grid-area: c;
+		width: 100%;
+		height: 100%;
+	}
+	/* Adding the third column*/
+	.blogPostsWrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	/* Increasing the size of the instagram link*/
+	.instagramWrapper {
+		width: 30%;
+		margin: auto;
+		margin: 2em auto ;
+		
+	}
+	.instagramWrapper p {
+		font-size: 1em;
+		padding-top: .8em;
+	}
+	.instagramWrapper i {
+		font-size: 2em;
+	}
+}
